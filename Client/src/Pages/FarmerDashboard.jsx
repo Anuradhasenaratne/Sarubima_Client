@@ -60,7 +60,7 @@ const FarmerDashboard = () => {
         setLoading(true);
         const token = localStorage.getItem("token");
         const response = await axios.get(
-          "http://localhost:5000/api/requests/my-requests",
+          import.meta.env.VITE_API_URL + "/api/requests/my-requests",
           {
             headers: { Authorization: `Bearer ${token}` },
           }

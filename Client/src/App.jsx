@@ -21,7 +21,7 @@ import MonthlyRevenue from "./admin/MonthlyRevenue";
 
 
 
-axios.defaults.baseURL = "http://localhost:5000";
+axios.defaults.baseURL = "http://35.153.16.193:5000/";
 axios.defaults.withCredentials = true; // Allow cookies to be sent with requests
 
 const App = () => {
